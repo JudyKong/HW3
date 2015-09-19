@@ -1,0 +1,19 @@
+int x= 0;
+
+
+void setup(){
+  frameRate(10);
+  size(500, 500);
+   background(0);
+}
+void draw(){
+ if (x<500){
+  fill (0);
+   rect( x, 0, 5, height);
+   fill(255);
+   rect(x, random(500), 5, height);
+   x= x+15;
+ }
+ else{
+   x=0;}
+}
